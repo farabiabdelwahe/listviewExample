@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         ContactsAdapter cAdapter = new ContactsAdapter(getApplicationContext(), contactNames);
         cLv.setAdapter(cAdapter);
 
+        // getSelectedContacts is well acessible ;  make sure you declared the adapter as  ContactsAdapter not as BaseAdapter
+        cAdapter.getSelectedContacts();
+
 
     }
 }
